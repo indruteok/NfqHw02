@@ -1,0 +1,62 @@
+/** @define Message */
+
+:root {
+  --MessageBlock-backgroundColor: white;
+  --MessageBlockMargin: 25px 0;
+  --MessageBlockPadding: 0 15px;
+  --MessageIncorrect-color: #fc4e1e;
+  --MessageSuccess-color: #14872c;
+  --MessageButton-color: white;
+  --MessageButton-backgroundColor: #376e9d;
+  --MessageButton-padding: 8px 10px;
+  --borderRadius: 5px;
+  --fontFamily: Verdana, Geneva, Tahoma, sans-serif;
+  --fontSize: 10px;
+}
+
+.Message {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+}
+.Message-block {
+  background: var(--MessageBlock-backgroundColor);
+  border-radius: var(--borderRadius);
+  margin: var(--MessageBlockMargin);
+  padding: var(--MessageBlockPadding);
+}
+
+.Message--incorrect {
+  border: 1px solid var(--MessageIncorrect-color);
+  border-right: 30px solid var(--MessageIncorrect-color);
+}
+
+.Message--success {
+  border: 1px solid var(--MessageSuccess-color);
+  border-right: 30px solid var(--MessageSuccess-color);
+}
+
+/* Button */
+
+.Message-button {
+  background-color: var(--MessageButton-backgroundColor);
+  border-radius: var(--borderRadius);
+  color: var(--MessageButton-color);
+  padding: var(--MessageButton-padding);
+  text-transform: uppercase;
+}
+
+/*  Utilities  */
+
+.u-floatRight {
+  float: right;
+}
+
+.u-link {
+  text-decoration: none;
+}
+
+.u-alignCenter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
